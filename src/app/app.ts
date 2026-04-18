@@ -10,10 +10,26 @@ import { Pra7 } from './pra7/pra7';
 import { Pra8 } from './pra8/pra8';
 import { Pra9 } from './pra9/pra9';
 import { Pra10 } from './pra10/pra10';
+import { Pra11 } from './pra11/pra11';
+import { Pra12 } from './pra12/pra12';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Practical1, Pra2, Pra3, Pra4, Pra5, Pra6, Pra7, Pra8, Pra9, Pra10],
+  imports: [
+    RouterOutlet,
+    Practical1,
+    Pra2,
+    Pra3,
+    Pra4,
+    Pra5,
+    Pra6,
+    Pra7,
+    Pra8,
+    Pra9,
+    Pra10,
+    Pra11,
+    Pra12,
+  ],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
