@@ -19,6 +19,8 @@ import { Pra17 } from './pra17/pra17';
 import { Pra18 } from './pra18/pra18';
 import { Pra19 } from './pra19/pra19';
 import { Pra19dynamicrouter } from './pra19dynamicrouter/pra19dynamicrouter';
+import { Pra20 } from './pra20/pra20';
+import { adminpra20Guard } from './guards/adminpra20-guard';
 
 export const routes: Routes = [
   { path: 'pra1', component: Practical1 },
@@ -41,4 +43,5 @@ export const routes: Routes = [
   { path: 'pra18', component: Pra18 },
   { path: 'pra19', component: Pra19 },
   { path: 'pra19dynamicroute/:id/:name', component: Pra19dynamicrouter },
+  { path: 'pra20', component: Pra20, canActivate: [adminpra20Guard] },
 ];
