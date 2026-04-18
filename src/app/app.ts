@@ -1,12 +1,22 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Practical1 } from './practical-1/practical-1';
+import { Pra2 } from './pra2/pra2';
+import { Pra3 } from './pra3/pra3';
+import { Pra4 } from './pra4/pra4';
+import { Pra5 } from './pra5/pra5';
+import { Pra6 } from './pra6/pra6';
+import { Pra7 } from './pra7/pra7';
+import { Pra8 } from './pra8/pra8';
+import { Pra9 } from './pra9/pra9';
+import { Pra10 } from './pra10/pra10';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Practical1, Pra2, Pra3, Pra4, Pra5, Pra6, Pra7, Pra8, Pra9, Pra10],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('Buddy');
+  title = 'Buddy';
 }
