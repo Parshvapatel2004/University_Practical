@@ -14,6 +14,7 @@ import { Pra11 } from './pra11/pra11';
 import { Pra12 } from './pra12/pra12';
 import { Pra13 } from './pra13/pra13';
 import { Pra14 } from './pra14/pra14';
+import { Pra15 } from './pra15/pra15';
 
 @Component({
   selector: 'app-root',
@@ -32,7 +33,8 @@ import { Pra14 } from './pra14/pra14';
     Pra11,
     Pra12,
     Pra13,
-    Pra14
+    Pra14,
+    Pra15
   ],
   templateUrl: './app.html',
   styleUrl: './app.css',
