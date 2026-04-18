@@ -17,6 +17,8 @@ import { Pra15 } from './pra15/pra15';
 import { Pra16 } from './pra16/pra16';
 import { Pra17 } from './pra17/pra17';
 import { Pra18 } from './pra18/pra18';
+import { Pra19 } from './pra19/pra19';
+import { Pra19dynamicrouter } from './pra19dynamicrouter/pra19dynamicrouter';
 
 export const routes: Routes = [
   { path: 'pra1', component: Practical1 },
@@ -37,4 +39,6 @@ export const routes: Routes = [
   { path: 'pra16', component: Pra16 },
   { path: 'pra17', component: Pra17 },
   { path: 'pra18', component: Pra18 },
+  { path: 'pra19', component: Pra19 },
+  { path: 'pra19dynamicroute/:id/:name', component: Pra19dynamicrouter },
 ];

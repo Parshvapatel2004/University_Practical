@@ -1,0 +1,11 @@
+<h1>Dynamic routes</h1>
+
+<ul>
+  <li *ngFor="let u of users">
+    <a [routerLink]="['/pra19dynamicroute', u.id, u.name]">
+      {{ u.name }}
+    </a>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
