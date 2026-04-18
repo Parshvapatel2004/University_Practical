@@ -1,0 +1,7 @@
+<h2>Students Marks</h2>
+
+<ul>
+  <li *ngFor="let student of students" [ngClass]="student.marks > 40 ? 'green' : 'red'">
+    {{ student.name }}: {{ student.marks }}
+  </li>
+</ul>
