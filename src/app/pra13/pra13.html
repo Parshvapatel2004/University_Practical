@@ -1,0 +1,5 @@
+<h2>Custom directive to highlight overdue tasks </h2>
+
+<li *ngFor="let t of tasks" [appHighlightOverduePra13]="t.overdue">
+  {{t.name}}
+</li>

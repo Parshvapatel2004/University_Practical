@@ -8,5 +8,5 @@ import { NameAbberPra12Pipe } from '../pipes/name-abber-pra12-pipe';
   styleUrl: './pra12.css',
 })
 export class Pra12 {
-  name = 'Sonal K Patel';
+  name = 'Parshva A Patel';
 }

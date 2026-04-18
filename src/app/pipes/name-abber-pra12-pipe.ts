@@ -2,7 +2,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
   name: 'nameAbberPra12',
-  standalone:true
 })
 export class NameAbberPra12Pipe implements PipeTransform {
   transform(value: string): string {
