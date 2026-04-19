@@ -1,0 +1,23 @@
+<h2>Password Validation</h2>
+<div style="background-color: antiquewhite">
+  <form [formGroup]="loginForm">
+    <div class="form-group col-md-6">
+      <label>Password</label>
+      <input type="password" formControlName="password" class="form-control" placeholder="Password"/>
+      <div
+        style="color: red"
+        *ngIf="loginForm.get('password')?.touched || loginForm.get('password')?.invalid">
+        <div *ngIf="loginForm.get('password')?.hasError('required')">
+          Password is required
+        </div>
+        <div *ngIf="loginForm.get('password')?.hasError('passwordStrength')">
+          Password must contain capital letter, number and special character
+        </div>
+      </div>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid" (click)="handleFormData()">
+      Submit
+    </button>
+  </form>
+</div>
