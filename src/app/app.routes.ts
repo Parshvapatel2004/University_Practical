@@ -24,6 +24,7 @@ import { adminpra20Guard } from './guards/adminpra20-guard';
 import { Pra21 } from './pra21/pra21';
 import { Pra22 } from './pra22/pra22';
 import { Pra23 } from './pra23/pra23';
+import { Pra24 } from './pra24/pra24';
 
 export const routes: Routes = [
   { path: 'pra1', component: Practical1 },
@@ -50,4 +51,5 @@ export const routes: Routes = [
   { path: 'pra21', component: Pra21 },
   { path: 'pra22', component: Pra22 },
   { path: 'pra23', component: Pra23 },
+  { path: 'pra24', component: Pra24 },
 ];

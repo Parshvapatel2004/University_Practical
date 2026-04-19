@@ -1,0 +1,18 @@
+<h2>Dynamic Form Using FormArray</h2>
+<div style="background-color: antiquewhite">
+  <form [formGroup]="studentForm" (ngSubmit)="handleFormData()">
+    <input type="text" formControlName="studentName" placeholder="Student Name"/>
+    <br>
+    <div formArrayName="subjects">
+      <div
+        *ngFor="let subject of subjects.controls; let i = index" [formGroupName]="i">
+        <input type="text" formControlName="subjectName" placeholder="Subject Name"/>
+        <input type="number" formControlName="marks" placeholder="Marks"/>
+        <button type="button" (click)="removeSubject(i)">Remove</button>
+        <br>
+      </div>
+    </div>
+    <button type="button" (click)="addSubject()">Add Subject</button>
+    <button type="submit">Submit</button>
+  </form>
+</div>
