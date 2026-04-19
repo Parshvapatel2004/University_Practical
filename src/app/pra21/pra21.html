@@ -2,11 +2,11 @@
 <form #admissionForm="ngForm" (ngSubmit)="onSubmit()">
   <label>Name:</label>
   <input type="text" name="name" [(ngModel)]="student.name" #name="ngModel" required />
-  <div *ngIf="name.invalid && name.touched">Name is required</div>
+  <div *ngIf="name.invalid && name.touched" style="color: red;">Name is required</div>
   <br />
   <label>Email:</label>
   <input type="email" name="email" [(ngModel)]="student.email" #email="ngModel" required email />
-  <div *ngIf="email.invalid && email.touched">Please enter a valid email</div>
+  <div *ngIf="email.invalid && email.touched" style="color: red;">Please enter a valid email</div>
   <br />
   <label>Gender:</label>
   <input type="radio" name="gender" value="Male" [(ngModel)]="student.gender" required />Male
@@ -20,7 +20,7 @@
     <option value="Vue">Vue</option>
   </select>
   <br />
-  <div *ngIf="course.invalid && course.touched">Please select a course</div>
+  <div *ngIf="course.invalid && course.touched" style="color: red;">Please select a course</div>
   <br />
   <button type="submit" [disabled]="admissionForm.invalid">Submit</button>
 </form>
