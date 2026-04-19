@@ -54,4 +54,6 @@ export const routes: Routes = [
   { path: 'pra23', component: Pra23 },
   { path: 'pra24', component: Pra24 },
   { path: 'pra25', component: Pra25 },
+  { path: 'pra26', loadComponent: () => import('../app/pra26/pra26').then((m) => m.Pra26) },
+  { path: 'pra29', loadComponent: () => import('../app/pra29/pra29') },
 ];
