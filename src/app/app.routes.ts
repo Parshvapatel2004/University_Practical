@@ -25,6 +25,7 @@ import { Pra21 } from './pra21/pra21';
 import { Pra22 } from './pra22/pra22';
 import { Pra23 } from './pra23/pra23';
 import { Pra24 } from './pra24/pra24';
+import { Pra25 } from './pra25/pra25';
 
 export const routes: Routes = [
   { path: 'pra1', component: Practical1 },
@@ -52,4 +53,5 @@ export const routes: Routes = [
   { path: 'pra22', component: Pra22 },
   { path: 'pra23', component: Pra23 },
   { path: 'pra24', component: Pra24 },
+  { path: 'pra25', component: Pra25 },
 ];

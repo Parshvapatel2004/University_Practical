@@ -1,0 +1,29 @@
+<h2>Profile Upload Form</h2>
+
+<form #uploadForm="ngForm" (ngSubmit)="onSubmit(uploadForm)">
+
+  <label>Name:</label>
+  <input type="text" name="name" ngModel required />
+  <br /><br />
+
+  <label>Upload Profile Picture:</label>
+  <input 
+    type="file" 
+    name="profilePic"
+    (change)="onFileChange($event)" 
+    required
+  />
+  <br /><br />
+
+  <div *ngIf="imagePreview">
+    <p>Preview:</p>
+    <img [src]="imagePreview" width="150" height="150" />
+  </div>
+
+  <br />
+
+  <button type="submit" [disabled]="uploadForm.invalid">
+    Submit
+  </button>
+
+</form>
