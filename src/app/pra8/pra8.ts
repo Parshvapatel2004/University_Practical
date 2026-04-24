@@ -11,6 +11,6 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './pra8.css',
 })
 export class Pra8 {
-  students = ['parshva', 'patel', 'hello'];
+  students = ['parshva', 'patel', 'hello','meet vastral'];
   showlist = true;
 }
