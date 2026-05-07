@@ -7,5 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './pra7.css',
 })
 export class Pra7 {
-  @Input() student: any;
+  @Input() name!:string;
+  @Input() course!:string;
+  @Input() marks!:number;
 }

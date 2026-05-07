@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { StudentPra15 } from '../services/student-pra15';
 import { NgFor } from '@angular/common';
+import { Meet } from '../meet';
 
 @Component({
   selector: 'app-pra15',
@@ -10,7 +11,7 @@ import { NgFor } from '@angular/common';
 })
 export class Pra15 {
   students: any[] = [];
-  constructor(private studentService: StudentPra15) {
-    this.students = this.studentService.getStudents();
+  constructor(private studentsevice: Meet) {
+    this.students = this.studentsevice.getStudent();
   }
 }

@@ -26,6 +26,8 @@ import { Pra22 } from './pra22/pra22';
 import { Pra23 } from './pra23/pra23';
 import { Pra24 } from './pra24/pra24';
 import { Pra25 } from './pra25/pra25';
+import { meetGuard } from './meet-guard';
+import { Pra7parent } from './pra7parent/pra7parent';
 
 export const routes: Routes = [
   { path: 'pra1', component: Practical1 },
@@ -49,11 +51,12 @@ export const routes: Routes = [
   { path: 'pra19', component: Pra19 },
   { path: 'pra19dynamicroute/:id/:name', component: Pra19dynamicrouter },
   { path: 'pra20', component: Pra20, canActivate: [adminpra20Guard] },
-  { path: 'pra21', component: Pra21 },
+  { path: 'pra21', component: Pra21, canActivate: [meetGuard] },
   { path: 'pra22', component: Pra22 },
   { path: 'pra23', component: Pra23 },
   { path: 'pra24', component: Pra24 },
   { path: 'pra25', component: Pra25 },
   { path: 'pra26', loadComponent: () => import('../app/pra26/pra26').then((m) => m.Pra26) },
   { path: 'pra29', loadComponent: () => import('../app/pra29/pra29') },
+  { path: 'para7', component: Pra7parent },
 ];
